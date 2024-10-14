@@ -1,0 +1,61 @@
+.header {
+    background: #000;
+}
+
+.header .inner {
+    max-width: 1440px;
+    height: 120px;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+.header .inner .gnb>ul {
+    display: flex;
+    gap: 30px;
+
+}
+
+.header .inner .gnb>ul>li {
+    position: relative;
+}
+
+.header .inner .gnb>ul>li>a {
+    display: block;
+    line-height: 120px;
+    font-size: 16px;
+    font-weight: 500;
+
+    color: #fff;
+}
+
+.header .inner .gnb>ul>li .sub {
+    display: none;
+    position: absolute;
+    top: 120px;
+    left: 50%;
+    z-index: 2;
+
+    transform: translate(-50%, 0);
+
+    width: 120px;
+
+    background: #fff;
+}
+
+.header .inner .gnb>ul>li:hover .sub {
+    display: block;
+}
+
+.header .inner .gnb>ul>li:hover .sub a {
+    display: block;
+    line-height: 40px;
+    text-align: center;
+
+    font-size: 15px;
+
+}
